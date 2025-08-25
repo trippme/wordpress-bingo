@@ -1,0 +1,36 @@
+.cdb-board-title { text-align: center; margin-bottom: 10px; }
+.cdb-board { display: grid; grid-template-columns: repeat(5, 1fr); gap: 5px; max-width:66%; margin: auto; }
+.cdb-tile { border: 1px solid #444; padding: 10px; text-align: center; cursor: pointer; user-select: none; }
+.cdb-tile.active { background-color: #4caf50; color: #fff; }
+
+.cdb-board-title { margin-bottom: 20px; }
+
+
+.cdb-tile {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+/* Adjust grid to fill container, allowing wider tiles */
+.cdb-board {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(120px, 1fr));
+  gap: 5px;
+  width:66%;
+  max-width: none;
+  margin: auto;
+}
+
+/* Tiles: flexible height, wide preferred, centered content */
+.cdb-tile {
+  padding: 10px;
+  min-height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  white-space: normal;
+  word-break: break-word;
+}
